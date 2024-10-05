@@ -18,12 +18,11 @@ const { title } = Astro.props;
 	</head>
 	<body>
 		<nav class="p-5 top-0 sticky">
-			<div class="sm:w-1/2 h-16 flex flex-row items-center pl-5 justify-around sm:justify-start text-xl rounded-full gap-10 bg-gray-200 shadow-lg">
-				<a href="/" class="text-xl font-bold">Fynaplan</a>
-				<a class="hidden sm:block">Meet Our Team</a>
-				<a class="hidden sm:block">About Us</a>
-				<a class="hidden sm:block">Contact</a>
-				<a>Lessons</a>
+			<div class="sm:w-1/2 h-16 flex flex-row items-center pl-5 pr-1 justify-around sm:justify-start text-xl rounded-full gap-10 bg-gray-200 shadow-lg">
+				<a href="/" class="text-xl font-bold flex-1">Fynaplan</a>
+				<a href="/team" class="hidden sm:block">Meet Our Team</a>
+				<a href="/about" class="hidden sm:block">About Us</a>
+				<a href="/lessons/lsn1" class="px-8 cursor-pointer bg-purple-800 py-3 rounded-full text-white">Lessons</a>
 			</div>
 		</nav>
 		<slot />
