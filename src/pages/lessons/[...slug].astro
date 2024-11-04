@@ -4,26 +4,56 @@ export async function getStaticPaths() {
   const pages = [
     {
       slug: "lsn1",
-      title: "Lesson 1: Gangam Style",
-      video: "https://www.youtube.com/embed/9bZkp7q19f0?si=wsybw_pbcZ9yA0m1",
+      title: "What to do With Your Income",
+      video: "https://docs.google.com/presentation/d/e/2PACX-1vSjxJh1ovEuXI5sTleej_Zy7ytiap88kkiMq-Ij2onMmHgfc7w7xPgOQ8ARIpZuAqURbfgLALIlMRtk/embed?start=false&loop=false&delayms=60000",
       text: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. lorem ipsumipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. lorem ipsum",
     },
     {
       slug: "lsn2",
-      video: "https://www.youtube.com/embed/dQw4w9WgXcQ?si=Mci-HoGbjcE8VI7k",
-      title: "never gonna give you up",
+      video: "https://docs.google.com/presentation/d/e/2PACX-1vRGKlCRXnxvMyElwqistH1OAsn__ZdXZypljq3a47x8Am2JKBsy6UnlOwcPQFvq4XPrc_xcvIRrdBZI/embed?start=false&loop=false&delayms=60000",
+      title: "Intro to Taxes",
       text: "I warned you!",
     },
     {
       slug: "lsn3",
-      video: "https://www.youtube.com/embed/bu59Z7J80Pk?si=VSAkkZ9A1rydPcuq",
-      title: "Meer was here :)",
+      video: "https://docs.google.com/presentation/d/e/2PACX-1vRWKhNsxVrC6ckiKiA8AhDES-tA6k0m6QGSGlzOg698xBhkCAn9IVCHI3mPIgl77TyjMnq0iQ7drj9t/embed?start=false&loop=false&delayms=60000",
+      title: "Intro to Insurance",
       text: "lorem",
     },
     {
       slug: "lsn4",
-      video: "https://www.youtube.com/embed/U06jlgpMtQs?si=MRKRpUqvs4buidOO",
-      title: "hope you like this!",
+      video: "https://docs.google.com/presentation/d/e/2PACX-1vTA9_SenbFiutTmIGpyxPXxFmOkZS-J3o-RAF8R-Y8T2-qnrUb76GZvtp0AOcfkzGerkG65kVFrOSHt/embed?start=false&loop=false&delayms=60000",
+      title: "Investing for Beginners",
+      text: "lorem",
+    },
+    {
+      slug: "lsn5",
+      video: "https://docs.google.com/presentation/d/e/2PACX-1vTd4sUXu9auhnOSOX4IGV839vrW-c_qfF0sRqekGENwxulrVva0DvDOFcO9A5kpX0PYiIngK3HR_SN2/embed?start=false&loop=false&delayms=60000",
+      title: "Getting Ready for College - Financially",
+      text: "lorem",
+    },
+    {
+      slug: "lsn6",
+      video: "https://docs.google.com/presentation/d/e/2PACX-1vS5eXULCWsLFhhfPm11q9MHKvJozRS6Is6dwq872YeiKebAoXvJr4j2QDLVOkwTVcGLLFYvTc_uNBCm/embed?start=false&loop=false&delayms=60000",
+      title: "Debt Management",
+      text: "lorem",
+    },
+    {
+      slug: "lsn7",
+      video: "https://docs.google.com/presentation/d/e/2PACX-1vQcunZr8tNZmA2bxnZbjp3Slm610Z14up60sv-aH0hd9IhSWlYMRE-sbzNS6J3m0JUFmeUXG_Qo5MNI/embed?start=false&loop=false&delayms=60000",
+      title: "All About Credit",
+      text: "lorem",
+    },
+    {
+      slug: "lsn8",
+      video: "https://docs.google.com/presentation/d/e/2PACX-1vRdWuQ1DKwoNeoPJjrPSWsihw6QQAY828Me_AYdb3EKe0RYgoAb6k3hV8Fb1jTadmblXsgVE86tz9f3/embed?start=false&loop=false&delayms=60000",
+      title: "College Loan Planning",
+      text: "lorem",
+    },
+    {
+      slug: "lsn9",
+      video: "https://docs.google.com/presentation/d/e/2PACX-1vQaOHXKBC2JE2VG1RqgkMn5cKPqGuoNsXRurXuQSwYB1Xy2i4Zeuv8pyVYZQyB8jH59F_utxEwEQXDC/embed?start=false&loop=false&delayms=60000",
+      title: "Budgeting",
       text: "lorem",
     },
   ];
@@ -39,22 +69,42 @@ const { title, text, video, slug } = Astro.props;
 
 let lessons = [
   {
-    title: "Lesson 1: Gangam Style",
+    title: "What to do With Your Income",
     link: "/lessons/lsn1",
     },
     {
-    title: "Lesson 2: Never Gonna Give You Up",
+    title: "Intro to Taxes",
     link: "/lessons/lsn2",
     },
     {
-    title: "Lesson 3: Meer was here :)",
+    title: "Intro to Insurance",
     link: "/lessons/lsn3",
     },
     {
-    title: "Lesson 4: hope you like this!",
+    title: "Investing for Beginners",
     link: "/lessons/lsn4",
     },
-]
+    {
+    title: "Getting Ready for College - Financially",
+    link: "/lessons/lsn5",
+    },
+    {
+    title: "Debt Management",
+    link: "/lessons/lsn6",
+    },
+    {
+    title: "All About Credit",
+    link: "/lessons/lsn7",
+    },
+    {
+    title: "College Loan Planning",
+    link: "/lessons/lsn8",
+    },
+    {
+    title: "Budgeting",
+    link: "/lessons/lsn9",
+    },
+];
 
 let currentLesson = lessons.findIndex((lesson) => lesson.link === `/lessons/${slug}`);
 
